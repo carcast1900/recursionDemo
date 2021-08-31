@@ -59,6 +59,11 @@ public class Recursion {
             Object temp = array[index2];
             array[index2]=array[index1];
             array[index1]=temp;
+            String swap = "";
+            for (Object a : array) {
+                swap += a +" ";
+            }
+            System.out.println(swap);
             return reverseArrayR(array, index1+1, index2-1);
         }
     }
